@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="js/md5.js"></script>
+  <script src="js/functions.js"></script>
+<body>
+<p class="extra">Spring 2019, CSCI430 ctf group1</p>
+<h1>Reset page</h1>
+<form action="reset" method="POST">
+  <label for="email"><b>Email</b></label>
+  <input type="text" placeholder="Enter Email" name="email" required>
+  <br>
+  <label for="psw"><b>Old Password</b></label>
+  <input type="password" placeholder="Enter Password" name="oldpsw" required>
+  <br>
+  <label for="psw"><b>New Password</b></label>
+  <input type="password" placeholder="Enter Password" name="psw" required>
+  <br>
+  <label for="psw"><b>Repeat Password</b></label>
+  <input type="password" placeholder="Repeat Password" name="psw_" required>
+  <br>
+  <input type="submit">
+  <br>
+</form>
+<h3>password rules:</h3>
+<ol>
+  <li>password must have at least 8 characters</li>
+  <li>password must have at least 1 upper and 1 lowercase character</li>
+  <li>password must have at least least 1 number and 1 symbol (_)</li>
+</ol>
+<p id="ph" style="color: red"></p>
+</body>
+</html>
